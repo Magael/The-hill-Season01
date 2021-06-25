@@ -4,5 +4,7 @@
 (() => {
 
     // your code here
-
+    Array.from(document.getElementsByClassName("target")).forEach( item => {
+        item.innerHTML = "owned";
+    });
 })();

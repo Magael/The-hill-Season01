@@ -3,4 +3,19 @@
 
 (() => {
     // your code here
+    class Person {
+        constructor(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;       
+          }
+          fullName() {
+            return "Hello " + this.firstName + " " + this.lastName;
+          }
+        
+    };
+        
+        document.getElementById("run").addEventListener("click", () => {
+            let me = new Person("Elsa", "da Silveira");
+            alert(JSON.stringify(me.fullName()));
+        });
 })();

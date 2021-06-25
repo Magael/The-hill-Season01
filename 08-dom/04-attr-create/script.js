@@ -4,5 +4,8 @@
 (() => {
 
     // your code here
+    document.getElementById("target").innerHTML = "<img src='" + document.getElementById("source").getAttribute("data-image") + "'>";
+    document.getElementById("source").remove();
+
 
 })();

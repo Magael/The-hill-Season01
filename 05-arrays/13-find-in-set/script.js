@@ -15,4 +15,10 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        alert(people.size)
+        alert(people.has("Alexandre"));
+        
+    });
 })();
+

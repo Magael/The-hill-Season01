@@ -3,4 +3,24 @@
 
 (() => {
     // your code here
+    class person {
+        constructor(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+        } //The get syntax binds an object property to a function that will be called when that property is looked up.
+        getName() {
+          return `${this.firstName} ${this.lastName}`;
+        }
+        setName(newName) {
+          this.firstName = newName.split(" ")[0];
+          this.lastName = newName.split(" ")[1];
+        }
+      }
+    
+      document.getElementById("run").addEventListener("click", () => {
+        const One = new person("Amélie", "Levrie");
+        alert (JSON.stringify(One.getName()));
+        One.setName("Elsa Magalhães");
+        alert(JSON.stringify(One.getName()));
+      });
 })();

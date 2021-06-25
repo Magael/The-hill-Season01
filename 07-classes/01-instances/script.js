@@ -7,6 +7,17 @@
             this.name = name;
             this.age = age;
         }
-    }
-    // your code here
+        get fullname() {
+            return this.getFullName()
+          }
+          getFullName() {
+              return this.name + ' ' + this.age
+          }
+      }
+  
+      document.getElementById("run").addEventListener("click", () => {
+          let Skitty = new Cat('Skitty', 9);
+          let Pixel = new Cat('Pixel', 6);
+          console.log(Skitty, Pixel); 
+    });
 })();

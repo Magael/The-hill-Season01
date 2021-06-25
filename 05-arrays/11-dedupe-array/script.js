@@ -21,5 +21,16 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const map = {};
+        const newArray = [];
+        fruits.forEach(el => {
+            if(!map[JSON.stringify(el)]){
+                map[JSON.stringify(el)] = true;
+                newArray.push(el);
+        }
+        });
+        alert(newArray);
+    });
 
 })();

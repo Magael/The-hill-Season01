@@ -17,7 +17,10 @@
                 var cell = cells[i];
                 cell.innerText = arr[i];
             }
-            
+            min.innerText=Math.min(...arr);
+            max.innerText=Math.max(...arr);
+            sum.innerText=eval(arr.join('+'));
+            average.innerHTML = eval(arr.join('+')) / arr.length;
             
         console.log();
     });
