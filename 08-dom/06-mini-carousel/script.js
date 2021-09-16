@@ -12,5 +12,8 @@
     ];
 
     // your code here
+    document.getElementById("next").addEventListener("click", () => {
+        
+    });
 
 })();
